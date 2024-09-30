@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('style-app.css');
+@import url('app/custom-container.scss');
+html, body { height: 100%; background-color: #F1F5F9; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.card-body{
+    padding: 10px !important;
+}
+.logo{
+    font-family: "Bellota", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.animated-element {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .animate {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+  }

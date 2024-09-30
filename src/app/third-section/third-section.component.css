@@ -1,0 +1,45 @@
+.card-border{
+border: 2px solid  #9CA3AF;
+}
+
+
+.Anim {
+    opacity: 0; 
+}
+
+.Anim.active {
+    --delay: calc(var(--planIndex) * 600ms);
+    animation: myAnim 2s ease var(--delay, 0) 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.card-style:hover{
+background-color: #475569;
+color: white;
+}
+
+
+
+
+.fa-icon{
+    background-image: url('../../assets/arrow-forward-svgrepo-com.svg'); 
+    background-size: cover; 
+    width: 20px;
+    height: 20px;
+    display: inline-flex; 
+}
+.flip{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+

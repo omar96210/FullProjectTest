@@ -1,0 +1,31 @@
+.button-style{
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: #475569;
+    padding: 12px;
+    width: 103px;
+    margin-right: 10px;
+}
+.button2-style{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #475569;
+    color: white;
+
+    width: 149px;
+    text-wrap: nowrap;
+    margin-right: 50px;
+    font-size: Clamp(21px,1vw,30px);
+}
+
+.button-style:hover{
+    background-color: rgba(255, 255, 255, 0.452);
+    color:#475569 ;
+}
+
+.button2-style:hover{
+    background-color: white;
+    color: #0F172A;
+
+}

@@ -1,0 +1,20 @@
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.textAnimate {
+opacity: 0;
+}
+
+.textAnimate.active {
+    opacity: 1;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+

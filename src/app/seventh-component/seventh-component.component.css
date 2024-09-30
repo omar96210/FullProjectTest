@@ -1,0 +1,19 @@
+.img{
+    background-image: url('../../assets/shap.png');
+    background-size: cover;
+    height: fit-content;
+}
+.button2-style{
+    border: 2px solid white;
+    color: white;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 10px;
+    width: 170px;
+    text-wrap: nowrap;
+    margin-left: 5px;
+}
+.button2-style:hover{
+    background-color: rgba(255, 255, 255, 0.295);
+    color: white;
+}

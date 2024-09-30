@@ -1,0 +1,49 @@
+.bg-color{
+    color: #475569;
+}
+.h-3{
+    font-family: Roboto ,sans-serif;
+    font-size: 48px;
+    line-height: 52.8px;
+    font-weight: 800;
+    color: #FFFFFF;
+
+}
+
+.nav-links-style{
+    font-family: Roboto ,sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.h-1{
+    font-family: Roboto ,sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 79.2px;
+}
+
+.h-2{
+    font-family: Roboto ,sans-serif;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 61.6px;
+
+}
+
+.body-text{
+    font-family: Roboto ,sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38.4px;
+
+}
+
+.button-XL{
+    font-family: Roboto ,sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}

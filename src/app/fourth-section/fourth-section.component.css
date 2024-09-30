@@ -1,0 +1,19 @@
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+.Anim {
+    opacity: 0;
+    }
+    
+    .Anim.active {
+        opacity: 1;
+        animation: myAnim 2s ease 0s 1 normal forwards;
+    }
+    
+    

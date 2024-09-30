@@ -1,0 +1,63 @@
+
+<div class="container ">
+  <h5 class="style-text body-text">{{'Digital menu pricing' | translate}}</h5>
+  <h2 class="h-2" style="font-size: Clamp(40px, 2vw,60px);">{{'Simple, Transparent Pricing' | translate}}</h2>
+  <p class="body-text">{{'We believe Digital menu should be accessible to all Business Owners, no matter the size'|translate}}</p>
+  <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-bottom: 20px; margin-left: 0; margin-right: 0;">
+   
+  @for (item of res; track item) {
+   
+      <div class="col">
+    
+      <div  class="card h-100" style="border: none; border-radius: 14px; box-shadow: 0 5px 10px 7px  rgba(210, 215, 211);"  >
+        
+        <h3 class="h-3" style="color: black; font-size: Clamp(30px,2vw,40px);">{{langService.getLang()==='ar'?    item.nameAr: item.nameEn}}</h3>
+          <div class="card-body">
+            <h5 class="card-title">{{langService.getLang()=== 'en'? item.subtitleEn : item.subtitleAr}}</h5>
+            <h4>{{langService.getLang() === 'en'? item.priceEn: item.priceAr}}</h4>
+          </div>
+         @for (feature of item.pricingPlansFeatures ; track $index) {
+          <div class="col">
+            <div class="row row-cols-1 row-cols-md-3 g-4" >
+             
+                <div style="display: inline-flex; " class="px-4 py-1"  >
+                  <div>
+                    @if(feature.active > 0){
+                    <img src="ri.png"  width="25px">
+                    } @else {
+                      <img src="wr.png" width="25px" >
+                    }
+                  </div>
+                  &nbsp;
+                  <div>
+                    <p  class="body-text p-0 m-0" style="text-wrap: nowrap; ">{{langService.getLang() === 'en' ? feature.nameEn : feature.nameAr}}</p>
+                  </div>
+                </div>
+              <!-- } @else {
+                <div style="display: inline-flex;">
+                  <div>
+                    <img src="wr.png" style="padding-top: 23px; padding-left: 15px;" width="35px">
+                  </div>
+                  <div>
+                    <p class="body-text" style="text-wrap: nowrap; ">{{langService.getLang() === 'en' ? feature.nameEn : feature.nameAr}}</p>
+                  </div>
+                </div>
+              }
+   -->
+            </div>
+          </div>
+         }
+         <div style="display: flex; justify-content: center; align-items: center;">
+          <button class="style-button body-text" (click)="whatsapp(item)">{{'Get Started' | translate}}</button>
+         </div>
+  
+        </div>
+      </div>
+    
+  
+    }
+      
+      
+    </div>
+  </div>
+  

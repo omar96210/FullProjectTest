@@ -1,0 +1,49 @@
+
+.style-text{
+    margin: 9px;
+    padding-left: 3px;
+    color:#E51313 ;
+}
+h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E51313;
+}
+.style-button{
+    width: 140px;
+    background-color: #E51313;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 19px;
+    padding: 8px;
+    margin: 15px;
+
+}
+.style-button:hover{
+    background-color: darkred;
+    color: antiquewhite;
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+h2{
+    margin: 10px ;
+}
+p{
+    color: grey;
+    margin: 10px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}

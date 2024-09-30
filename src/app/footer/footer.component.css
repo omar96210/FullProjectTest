@@ -1,0 +1,65 @@
+.p{
+    color: white;
+    font-size: Clamp(15px,1vw,25px);
+}
+
+.fa-location {
+    background-image: url('../../assets/location_13333022.png'); 
+    background-size: cover; 
+    width: 25px;
+    height: 25px;
+    display: inline-flex; 
+    margin: 8px;
+    
+}
+.fa-contact{
+    background-image: url('../../assets/phone-call_17069318.png'); 
+    background-size: cover; 
+    width: 25px;
+    height: 25px;
+    display: inline-flex; 
+    margin: 8px;
+}
+.fa-email{
+    background-image: url('../../assets/envelope_9073062.png'); 
+    background-size: cover; 
+    width: 25px;
+    height: 25px;
+    display: inline-flex; 
+    margin: 8px;
+}
+
+.fa-wsp{
+    background-image: url('../../assets/whatsapp_733585.png'); 
+    background-size: cover; 
+    width: 25px;
+    height: 25px;
+    display: inline-flex; 
+    margin: 8px;
+}
+
+.free-trial {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #262c38; 
+    padding: 10px;
+    z-index: 1000; 
+  }
+  
+  
+  .free-trial-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: Clamp(14px,1.4vw,28px);
+    margin: 3px;
+  }
+  .hidden {
+    opacity: 0;
+  }
+  
+  
+  
+  

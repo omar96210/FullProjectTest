@@ -1,0 +1,27 @@
+
+.cardHover:hover{
+    /* background-color: #48484948; */
+    box-shadow:5px 10px 15px 20px #48484948;
+    }
+
+    .cardAnim{
+        animation: myAnim 4s ease 0s 1 normal forwards;
+    }
+    @keyframes myAnim {
+        0% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .showMore{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: #4c4c92;
+    }
+
+    

@@ -1,0 +1,56 @@
+.img{
+    background-image: url('../../assets/Shape.png');
+    background-size: cover;
+    height: fit-content;
+    margin-top: 0px;
+
+}
+@keyframes myAnim {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+}
+.imageAnim{
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+.button2-style{
+    border: 2px solid white;
+    color: white;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 10px;
+    width: 170px;
+    text-wrap: nowrap;
+    margin-left: 5px;
+}
+.button2-style:hover{
+    background-color: rgba(255, 255, 255, 0.295);
+    color: white;
+}
+.textColor{
+    background: -webkit-linear-gradient(90deg, rgba(161,159,199,1) 0%, rgba(203,213,225,1) 35%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.textAnim{
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+

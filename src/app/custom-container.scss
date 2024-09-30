@@ -1,0 +1,92 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 176px) {
+
+ 
+    $container-padding-x: 15px;
+  
+    @mixin make-container($padding-x: $container-padding-x) {
+      width: 100%;
+      padding-right: $padding-x;
+      padding-left: $padding-x;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    // Usage
+    .custom-container {
+      @include make-container();
+    }
+  }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    $container-padding-x: 20px;
+  
+    @mixin make-container($padding-x: $container-padding-x) {
+      width: 100%;
+      padding-right: $padding-x;
+      padding-left: $padding-x;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    // Usage
+    .custom-container {
+      @include make-container();
+    }
+  }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    $container-padding-x: 30px;
+  
+    @mixin make-container($padding-x: $container-padding-x) {
+      width: 100%;
+      padding-right: $padding-x;
+      padding-left: $padding-x;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    // Usage
+    .custom-container {
+      @include make-container();
+    }
+  }
+  
+  // X-Large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    $container-padding-x: 60px;
+  
+    @mixin make-container($padding-x: $container-padding-x) {
+      width: 100%;
+      padding-right: $padding-x;
+      padding-left: $padding-x;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    // Usage
+    .custom-container {
+      @include make-container();
+    }
+  }
+  
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media (min-width: 1400px) {
+  
+    $container-padding-x: 80px;
+  
+    @mixin make-container($padding-x: $container-padding-x) {
+      width: 100%;
+      padding-right: $padding-x;
+      padding-left: $padding-x;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    // Usage
+    .custom-container {
+      @include make-container();
+    }
+  }

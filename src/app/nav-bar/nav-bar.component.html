@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0 "  >
+    <div class="container-fluid p-1 " style="background-color: #475569;">
+      <img src="logoWhite.png" class="m-2"  width="100px" >
+      <!-- <span class=" h-3 logo" style="padding-left: 40px; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; line-height: 40px;">Menus 'n <br> More</span> -->
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link  nav-links-style" aria-current="home-page" routerLink="/"  style="color: white;">{{'Homenav' | translate}}</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-links-style dropdown-toggle" style="color: white;"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{'Plans' | translate}}
+            </a>
+            <ul class="dropdown-menu">
+              @for (item of response.products; track item){
+                <li><a class="dropdown-item" href="/features/{{item.sid}}">{{langService.getLang() == 'en'? item.nameEn : item.nameAr}}</a></li>
+              }
+            
+            </ul>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link nav-links-style" style="color: white;" href="/prices.component">{{'Prices' | translate}}</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-links-style" style="color: white;"  (click)="ScrollIntoView('#contact')" href="#">{{'Contact us' | translate}}</a>
+          </li>
+  
+ 
+        </ul>
+    
+          <div class="d-flex">
+          <button class=" button2-style"  (click)="translate('ar')" >{{'عربي' | translate}}</button>
+          </div>
+      </div>
+    </div>
+  </nav>
+
+
